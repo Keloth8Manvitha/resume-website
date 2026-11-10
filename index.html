@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manvitha Keloth | Portfolio & Resume</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f7f5;
+            --card-bg: #ffffff;
+            --primary-green: #2e5a44;
+            --accent-green: #4a7c59;
+            --soft-blue: #3d5a80;
+            --sky-blue: #98c1d9;
+            --text-main: #2b3a32;
+            --text-muted: #5c7064;
+            --border-color: #d1ded6;
+            --shadow: 0 10px 30px rgba(46, 90, 68, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-green), var(--soft-blue));
+            color: #ffffff;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p.tagline {
+            font-size: 1.1rem;
+            font-weight: 500;
+            opacity: 0.95;
+            letter-spacing: 0.5px;
+        }
+
+        section {
+            padding: 2.5rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--primary-green);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .about-text {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: #fafcfb;
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(46, 90, 68, 0.06);
+        }
+
+        .card h3 {
+            color: var(--primary-green);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card span {
+            display: inline-block;
+            font-size: 0.85rem;
+            background: var(--sky-blue);
+            color: var(--primary-green);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background: #e8f0ec;
+            color: var(--primary-green);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #2b3a32;
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            section { padding: 1.5rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Manvitha Keloth</h1>
+            <p class="tagline">BBA Student at IIM Bangalore | CA Foundation Aspirant | Creative Entrepreneur & Developer</p>
+        </header>
+
+        <!-- About Section -->
+        <section>
+            <h2>About Me</h2>
+            <p class="about-text">
+                I am a multi-passionate individual blending business acumen, analytical rigor, and deep artistic creativity. Currently pursuing my BBA in Digital Business and Entrepreneurship at <strong>IIM Bangalore</strong> alongside my <strong>CA Foundation</strong> studies, I love building things from scratch—whether it's functional web apps with code, enterprise business models, or nature-inspired canvas paintings that I sell.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h2>Education</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <span>2026 – 2029</span>
+                    <h3>BBA in Digital Business & Entrepreneurship</h3>
+                    <p>Indian Institute of Management Bangalore (IIM Bangalore)</p>
+                </div>
+                <div class="card">
+                    <span>Professional Studies</span>
+                    <h3>CA Foundation</h3>
+                    <p>Institute of Chartered Accountants of India (ICAI)</p>
+                </div>
+                <div class="card">
+                    <span>Class 12th (PCB)</span>
+                    <h3>TS BIE (91% Aggregate)</h3>
+                    <p>Completed higher secondary education in Telangana.</p>
+                </div>
+                <div class="card">
+                    <span>Class 10th</span>
+                    <h3>CBSE Board</h3>
+                    <p>Completed foundational secondary schooling.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creative & Entrepreneurial Ventures -->
+        <section>
+            <h2>Artistic & Creative Ventures</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <span>Fine Arts & Commerce</span>
+                    <h3>Nature-Inspired Canvas Paintings</h3>
+                    <p>Create detailed nature and celestial-themed acrylic and mixed-media art (like moonscapes and florals). Successfully sold original paintings, combining artistic passion with micro-entrepreneurship.</p>
+                </div>
+                <div class="card">
+                    <span>Handmade Crafts</span>
+                    <h3>Crafts & Traditional Art</h3>
+                    <p>Passionate about handcrafted decor, intricate wire and tissue paper flower petals, and traditional rangoli design, keeping traditional arts alive with a modern aesthetic.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-badge">HTML5 & CSS3</div>
+                <div class="skill-badge">JavaScript (Basics)</div>
+                <div class="skill-badge">Business Strategy & Entrepreneurship</div>
+                <div class="skill-badge">Financial Accounting (CA Foundation)</div>
+                <div class="skill-badge">Fine Arts & Canvas Painting</div>
+                <div class="skill-badge">Creative Problem Solving</div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Manvitha Keloth. Crafted for academic submission.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
